@@ -1,6 +1,6 @@
 ## wroks
 nodejs 练习
----------------------------------------
+
 ## 安装node
 请到 Node 官网[nodejs.org](nodejs.org)，或者国内镜像[npm.taobao.org/mirrors/node](https://npm.taobao.org/mirrors/node)，下载安装包。推荐安装最新的稳定版，目前是v6.x。
 
