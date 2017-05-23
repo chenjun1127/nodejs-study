@@ -1,7 +1,7 @@
 var http=require('http')
 var port=1000
 function onReuqest(req,res){
-	res.writeHead(200,{'Conteny-type':"text/paain"});
+	res.writeHead(200,{'Conteny-type':"text/plain"});
 	res.write('hello world!')
 	res.end()
 }
