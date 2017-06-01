@@ -1,16 +1,24 @@
-/*************写入文件******************/
-var fs = require('fs')
-fs.writeFile('writeFile.txt', '我是被写入的数据', function (err, data) {
+var fs = require('fs');
+// 打开文件
+console.log("准备打开文件！");
+fs.open('./files/test3.txt', 'rs+', function(err, data) {
 	if (err) {
-		return console.log(err)
+		console.log(err)
+		return
 	}
-	console.log("数据写入成功！");
-	console.log("--------我是分割线-------------")
-	console.log("异步读取写入的数据！");
-	fs.readFile('test.txt', function (err, data) {
-		if (err) {
-			return console.log(err)
-		}
-		console.log(data.toString())
-	})
+	console.log('文件打开成功！')
+})
+
+// 获取文件信息
+console.log('获取文件信息！');
+fs.stat('./files/test3.txt', function(err, stats) {
+	if (err) {
+		console.log(err)
+		return
+	}
+	console.log(stats)
+	console.log("读取文件信息成功！");
+	console.log("是否为文件(isFile) ? " + stats.isFile());
+	console.log("是否为目录(isDirectory) ? " + stats.isDirectory());
+	console.log(stats.dev)
 })

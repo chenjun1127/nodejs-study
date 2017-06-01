@@ -1,14 +1,9 @@
-var fs = require('fs');
-/****************读取文件数据***********************/
-// 异步读取
-fs.readFile('test.txt', function (err, data) {
-	if (err) {
-		console.log(err.stack);
-
-	}
-	console.log("异步读取: "+data.toString());
-})
-// 同步读取
-var data = fs.readFileSync('test.txt');
-console.log("同步读取: "+data.toString());
-console.log('\n')
+var fs = require("fs");
+fs.readFile('./files/test1.txt', function (error, data) { //test.txt，是相对于cd到的当前目录
+    if (error) {
+        console.log(error.stack);
+        return;
+    }
+    console.log(data.toString());
+});
+console.log("程序执行完毕");

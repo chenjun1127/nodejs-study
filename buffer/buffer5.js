@@ -6,8 +6,8 @@
 	sourceStart - 数字, 可选, 默认: 0
 	sourceEnd - 数字, 可选, 默认: buffer.length 
 */
-var buffer_1=new Buffer('jack')
-var buffer_2=new Buffer(1000);
+var buffer_1 = new Buffer('jack')
+var buffer_2 = new Buffer(1000);
 console.log(buffer_2.length)
-var result=buffer_1.copy(buffer_2)
+var result = buffer_1.copy(buffer_2)
 console.log(result)
