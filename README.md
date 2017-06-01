@@ -3,7 +3,7 @@
 ```bash
 git clone git@github.com:chenjun1127/NodeJS-Study.git
 ```
-#### 进入到各个文件夹，node运 行各个文件，有 package.json 需要先安装依赖;
+#### 进入到各个文件夹，node 运行各个文件，有 package.json 需要先安装依赖;
 ```bash
 cd xx
 npm install 
